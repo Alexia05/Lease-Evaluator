@@ -7,7 +7,6 @@
  *
  * @author arelysalvarezpadilla
  */
-
 public class LeaseEvaluator {
 
     //instance variables 
@@ -20,14 +19,11 @@ public class LeaseEvaluator {
     private double milesDriven;              //The number of miles actually driven over the life of the lease
 
     //constructor
-    public LeaseEvaluator(String custNameI, int leaseTermI, double monthlyPayment, double downPayment) {
+    public LeaseEvaluator(String custNameI, int leaseTermI, double monthlyPayment, double downPayment, int milesYear, double chargeMilesI, double milesDrivenI) {
         custName = custNameI;
         leaseTerm = leaseTermI;
         montPay = monthlyPayment;
         downPay = downPayment;
-    }
-
-    public LeaseEvaluator(int milesYear, double chargeMilesI, double milesDrivenI) {
         freeMilesYear = milesYear;
         chargeMiles = chargeMilesI;
         milesDriven = milesDrivenI;
