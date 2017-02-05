@@ -77,8 +77,8 @@ public class LeaseEvaluator {
     private double totalCharges;                 //all the charges
 
     public double getactCost() {
-        totalCharges = (downPay + (montPay * leaseTerm) + chargeMiles) / leaseTerm;
-        actCost = totalCharges + (totalCharges * 7) / 100;
+        totalCharges = (downPay + (montPay * leaseTerm) + ((milesDriven - freeMilesYear) * chargeMiles)) / leaseTerm;
+        actCost = totalCharges + (totalCharges * 0.07);
         return actCost;
     }
 
