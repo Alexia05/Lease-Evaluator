@@ -52,7 +52,7 @@ public class LeaseEvaluatorTest {
 
         double monthlyPay = myLeaseEvaluator.getmontPay();
 
-        System.out.println("\nIf you want to change the monthly payment to $" + monthlyPay);
+        System.out.println("\nIf you change the monthly payment to $" + monthlyPay);
 
         //getting the actual cost with the new montlhy payment 
         double actCostN = myLeaseEvaluator.getactCost();

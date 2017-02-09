@@ -16,10 +16,10 @@ public class LeaseEvaluator {
     private double downPay;                  //The down payment
     private int freeMilesYear;               //The maximum number of “free” miles allowed per year
     private double chargeMiles;               //The charge per mile for all miles over the maximum
-    private double milesDriven;              //The number of miles actually driven over the life of the lease
+    private int milesDriven;              //The number of miles actually driven over the life of the lease
 
     //constructor
-    public LeaseEvaluator(String custNameI, int leaseTermI, double monthlyPayment, double downPayment, int milesYear, double chargeMilesI, double milesDrivenI) {
+    public LeaseEvaluator(String custNameI, int leaseTermI, double monthlyPayment, double downPayment, int milesYear, double chargeMilesI, int milesDrivenI) {
         custName = custNameI;
         leaseTerm = leaseTermI;
         montPay = monthlyPayment;
